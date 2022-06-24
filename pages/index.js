@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      adminboard
+      admin board
     </div>
   )
 }
