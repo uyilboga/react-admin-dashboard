@@ -1,4 +1,4 @@
-$primary: #145bea;
+$primary: #009ef7;
 $secondary: #833bec;
 $success: #1ce1ac;
 $info: #ff7d50;
@@ -47,7 +47,26 @@ a {
       padding: 30px;
       .login-content {
         form {
-
+          button{
+            display: flex;
+            margin:15px 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-radius: 10px;
+            border:none;
+          }
+          button.first-btn{
+            background-color: $primary;
+          }
+          span.or{
+            display: block;
+          }
+          button.button-another{
+            background-color: #f5f8fa;
+            color: #7e8299;
+          }
         }
       }
     }

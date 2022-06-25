@@ -37,9 +37,24 @@ export default function Home() {
                                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                         <Form.Check type="checkbox" label="Check me out" />
                                     </Form.Group>
-                                    <Button variant="primary" type="submit">
-                                        Submit
+                                    <Button className="first-btn" variant="primary" type="submit">
+                                        <span className="icon"></span>
+                                        <span className="txt">Continue</span>
                                     </Button>
+                                    <span className="or">OR</span>
+                                    <Button className="button-another" variant="primary" type="submit">
+                                        <span className="icon"></span>
+                                        <span className="txt">Continue with Google</span>
+                                    </Button>
+                                    <Button className="button-another" variant="primary" type="submit">
+                                        <span className="icon"></span>
+                                        <span className="txt">Continue with Facebook</span>
+                                    </Button>
+                                    <Button className="button-another" variant="primary" type="submit">
+                                        <span className="icon"></span>
+                                        <span className="txt">Continue with Apple</span>
+                                    </Button>
+
                                 </Form>
                             </div>
                             </Card.Body>
