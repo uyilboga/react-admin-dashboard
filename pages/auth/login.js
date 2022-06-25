@@ -15,9 +15,7 @@ export default function Home() {
                                     <h3>Sign In to Metronic</h3>
                                     <Alert variant="warning">
                                         New Here?
-                                        <Alert.Link href="#">
-                                            Create An Account   
-                                        </Alert.Link>
+                                        <Alert.Link href="#">Create An Account</Alert.Link>
                                     </Alert>
                                 </div>
                             </Card.Header>
