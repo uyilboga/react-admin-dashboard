@@ -2,6 +2,7 @@
 import {Container, Row, Col, Button, Form, Alert, Card} from "react-bootstrap";
 import Link from 'next/link'
 
+
 export default function Home() {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function Home() {
                     <Col md={4} className="mx-auto">
                         <Card className="login-card">
                             <Card.Header>
-                                <div className="login-header">
+                            <div className="login-header">
                                     <h3>Sign In to Metronic</h3>
                                     <Alert variant="warning">
                                         New Here?
