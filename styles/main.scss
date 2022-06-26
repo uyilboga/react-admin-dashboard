@@ -1,0 +1,262 @@
+$primary: #5710B2;
+$secondary: #00B2FF;
+$success: #21D488;
+$info: #ff7d50;
+$warning: #FFC700;
+$danger: #F0416C;
+$light: #FBF9F6;
+$white: #fff;
+$dark: #181C32;
+$gray:#7E8299;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+.form-control {
+	&:focus {
+		outline: 0 !important;
+		box-shadow: none !important;
+	}
+}
+
+.btn {
+	padding: 0.75rem 1.5rem;
+	font-size: 14px;
+	border-radius: 0.65rem;
+}
+
+.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+	border: 0;
+	padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+}
+
+.btn:not(.btn-shadow):not(.shadow):not(.shadow-sm):not(.shadow-lg) {
+	box-shadow: none !important;
+}
+
+.login-page {
+	padding-top: 100px;
+	.login-card {
+		border: none;
+		box-shadow: 0px 3px 15px 0px rgba(#000, .05);
+		.card-header {
+			background: transparent;
+			border: none;
+			.login-header {
+				padding: 30px;
+				h3 {
+					color: $secondary;
+				}
+				h4 {
+
+				}
+			}
+		}
+		.card-body {
+			padding: 30px;
+			.login-content {
+				form {
+					button{
+						display: flex;
+						margin:15px 0;
+						width: 100%;
+						justify-content: center;
+						align-items: center;
+						height: 50px;
+						border-radius: 10px;
+						border:none;
+					}
+					button.first-btn{
+						background-color: $primary;
+					}
+					span.or{
+						display: block;
+					}
+					button.button-another{
+						background-color: #f5f8fa;
+						color: #7e8299;
+					}
+				}
+			}
+		}
+	}
+}
+
+.dashboard-sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	height: 100vh;
+	width: 265px;
+	background: $primary;
+	.sidebar-logo {
+		a {
+			padding: 0 30px;
+			height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba($dark, .2);
+			img {
+
+			}
+		}
+	}
+	.sidebar-menu {
+		padding: 20px 0;
+		ul {
+			li {
+				padding: 0 15px;
+				a {
+					padding: 15px;
+					color: rgba($white, .7);
+					display: flex;
+					align-items: center;
+					font-size: 14px;
+					border-radius: 10px;
+					.icon {
+						margin-right: 10px;
+						svg {
+							stroke: $success;
+						}
+					}
+					&:hover,
+					&.active {
+						background: rgba($white, .1);
+					}
+				}
+				.menu-title {
+					display:  block;
+					letter-spacing: 2px;
+					color: rgba($white, .5);
+					font-size: 12px;
+					margin-top: 20px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	.sidebar-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	left: 265px;
+	width: calc(100% - 265px);
+	background: $light;
+	border-bottom: 1px solid rgba($dark, .1);
+	.topbar-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 30px;
+		height: 90px;
+		.search {
+			form {
+				.form-item {
+					position: relative;
+					.form-control {
+						border: none;
+						background: $white;
+						border-radius: 10px;
+						font-size: 13px;
+						min-width: 240px;
+						height: 45px;
+						&::placeholder {
+							color: $gray;
+						}
+					}
+					.icon {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 20px;
+						svg {
+							stroke: $primary
+						}
+					}
+				}
+			}
+		}
+
+		.topbar-right {
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 -5px;
+				li {
+					padding: 0 5px;
+					a {
+						width: 45px;
+						height: 45px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 10px;
+						&.notifications {
+							background: rgba($primary, .1);
+							svg {
+								stroke: $primary;
+							}
+						}
+						&.settings {
+							background: rgba($danger, .1);
+							svg {
+								stroke: $danger;
+							}
+						}
+						&.darkmode {
+							background: rgba($secondary, .1);
+							svg {
+								stroke: $secondary;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.dashboard-main {
+	width: calc(100% - 265px);
+	margin-left: auto;
+	background: $light;
+	min-height: 100vh;
+}
