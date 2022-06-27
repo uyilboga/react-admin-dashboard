@@ -30,135 +30,139 @@ p {
 	margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 
 .login-page {
-	padding-top: 100px;
-	.login-card {
-		border: none;
-		box-shadow: 0px 3px 15px 0px rgba(#000, .05);
-		.card-header {
-			background: transparent;
-			border: none;
-			.login-header {
-				padding: 30px;
-				h3 {
-					color: $secondary;
-					text-align: center;
-					color: $dark;
-					font-size: 25px;
-					font-weight: 600;
-				}
-				h4 {
-					font-size: 17px;
-					color: $gray;
-					text-align: center;
-					a {
-						color: $secondary;
-					}
-				}
-				.info-mail {
-					background-color: $primary-soft;
-					color: $primary;
-					padding: 25px;
-					margin: 50px 0 30px;
-					border-radius: 10px;
-					.cnt {
-						color: $primary;
-						font-size: 18px;
-						span {
-							font-weight: bold;
-						}
-					}
-				}
-
-			}
-		}
-		.card-body {
-			padding: 30px;
-			.login-content {
-				form {
-					label {
-						color: $dark;
-						font-weight: 500;
-						display: inline-block;
-					}
-					label.forget-password {
-						margin-left: auto;
-					}
-					a.forget-password{
-						color: $secondary;
-						margin-top: 5px;
-						font-size: 15px;
-						&:hover{
-							border-bottom: 1px solid $secondary;
-						}
-					}
-					button{
-						display: flex;
-						margin:20px 0;
-						width: 100%;
-						justify-content: center;
-						align-items: center;
-						height: 50px;
-						border-radius: 10px;
-						border:none;
-					}
-					button.first-btn{
-						background-color: $secondary;
-					}
-					span.or{
-						display: block;
-						text-align: center;
-						color: $gray;
-						font-size: 15px;
-						font-weight: bold;
-					}
-					button.button-another{
-						background-color: #f5f8fa;
-						color: #7e8299;
-						.txt {
-							transition: .4s;
-						}
-						&:hover {
-							.google-txt {
-								color: $google-color;
-							}
-							.facebook-txt {
-								color: $facebook-color;
-							}
-							.twitter-txt {
-								color: $twitter-color;
-							}
-						}
-						span.icon{
-							margin-right: 20px;
-						}
-						span.google {
-							svg {
-								fill: $google-color;
-							}
-						}
-						span.facebook {
-							svg {
-								fill:$facebook-color;
-							}
-						}
-						span.twitter {
-							svg {
-								fill: $twitter-color;
-							}
-						}
-						span.txt{
-							text-align: left;
-							color: #7e8299;
-						}
-					}
-				}
-			}
-		}
-	}
+  padding-top: 100px;
+  .login-card {
+    border: none;
+    box-shadow: 0px 3px 15px 0px rgba(#000, .05);
+    .card-header {
+      background: transparent;
+      border: none;
+      .login-header {
+        padding: 30px;
+        h3 {
+          color: $secondary;
+          text-align: center;
+          color: $dark;
+          font-size: 25px;
+          font-weight: 600;
+        }
+        h4 {  
+            font-size: 17px;
+            color: $gray;
+            text-align: center;
+            a {
+              color: $secondary;
+            }
+        }
+        .info-mail {
+          background-color: $primary-soft;
+          color: $primary;
+          padding: 25px;
+          margin: 50px 0 30px;
+          border-radius: 10px;
+          .cnt {
+            color: $primary;
+            font-size: 18px;
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+        
+      }
+    }
+    .card-body {
+      padding: 30px;
+      .login-content {
+        form {
+          label {
+            color: $dark;
+            font-weight: 500;
+            display: inline-block;
+          }
+          label.forget-password {
+            margin-left: auto;
+          }
+          a.forget-password{
+            color: $secondary;
+            margin-top: 5px;
+            font-size: 15px;
+            &:hover{
+              border-bottom: 1px solid $secondary;
+            }
+          }
+          button{
+            display: flex;
+            margin:20px 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-radius: 10px;
+            border:none;
+          }
+          button.first-btn{
+            background-color: $secondary;
+          }
+          span.or{
+            display: block;
+            text-align: center;
+            color: $gray;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          button.button-another{
+            background-color: #f5f8fa;
+            color: #7e8299;
+            .txt {
+              transition: .4s;
+            }
+            &:hover {
+              .google-txt {
+                color: $google-color;
+              }
+              .facebook-txt {
+                color: $facebook-color;
+              }
+              .twitter-txt {
+                color: $twitter-color;
+              }
+            }
+            span.icon{
+              margin-right: 20px;
+            }
+            span.google {
+              svg {
+                fill: $google-color;
+              }
+            }
+            span.facebook {
+              svg {
+                fill:$facebook-color;
+              }
+            }
+            span.twitter {
+              svg {
+                fill: $twitter-color;
+              }
+            }
+            span.txt{
+              text-align: left;
+              color: #7e8299;
+            }
+          }
+        }
+      }
+    }
+  }
 }
